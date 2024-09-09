@@ -6,4 +6,9 @@ public partial class AboutPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void BtnSample_Clicked(object sender, EventArgs e)
+    {
+		lblSample.Text = txtSample.Text.Trim();
+    }
 }
