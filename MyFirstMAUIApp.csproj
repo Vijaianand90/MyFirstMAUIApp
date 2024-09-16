@@ -49,11 +49,26 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="5.3.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.1" />
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.8" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+		<PackageReference Include="Syncfusion.Maui.Core" Version="26.2.14" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="AboutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ManageUserPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\UserDetailsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\UserListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

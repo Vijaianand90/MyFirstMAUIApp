@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMAUIApp.Views.ManageUserPage"
+             xmlns:viewmodel ="clr-namespace:MyFirstMAUIApp.ViewModels"
+             x:DataType="viewmodel:ManageUserViewModel"
+             xmlns:inputLayout="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             Title="{Binding Title}">
+    <VerticalStackLayout Padding="0,10,0,0">
+        <inputLayout:SfTextInputLayout Hint="Name">
+            <Entry Text="{Binding NewUser.Name}" />
+        </inputLayout:SfTextInputLayout>
+        <BoxView></BoxView>
+        <inputLayout:SfTextInputLayout Hint="Email">
+            <Entry Text="{Binding NewUser.Email}" />
+        </inputLayout:SfTextInputLayout>
+        <BoxView></BoxView>
+        <inputLayout:SfTextInputLayout Hint="Address">
+            <Entry Text="{Binding NewUser.Address}" />
+        </inputLayout:SfTextInputLayout>
+        <BoxView></BoxView>
+        <Button Text="Save User" Margin="10,10,10,10" Command="{Binding SaveUserCommand}"></Button>
+    </VerticalStackLayout>
+</ContentPage>
